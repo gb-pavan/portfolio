@@ -39,7 +39,7 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             className="text-xl font-bold text-gradient"
           >
-            Alex Johnson
+            Pavan Kumar
           </motion.div>
 
           {/* Desktop Navigation */}

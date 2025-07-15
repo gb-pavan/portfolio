@@ -43,7 +43,7 @@ const Hero = () => {
         <motion.div variants={itemVariants} className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
             Hi, I'm{' '}
-            <span className="text-gradient">Alex Johnson</span>
+            <span className="text-gradient">Pavan Kumar</span>
           </h1>
           <div className="text-2xl md:text-3xl text-gray-700 mb-8 h-16">
             <TypeAnimation

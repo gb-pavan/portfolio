@@ -20,7 +20,7 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-gradient mb-4">Alex Johnson</h3>
+            <h3 className="text-2xl font-bold text-gradient mb-4">Pavan Kumar</h3>
             <p className="text-gray-300 leading-relaxed">
               Full Stack Developer passionate about creating exceptional web experiences. 
               Always excited to work on innovative projects and collaborate with amazing teams.
@@ -88,7 +88,7 @@ const Footer = () => {
           className="border-t border-gray-700 mt-8 pt-8 text-center"
         >
           <p className="text-gray-400 flex items-center justify-center">
-            Made with <Heart size={16} className="mx-2 text-red-500" /> by Alex Johnson
+            Made with <Heart size={16} className="mx-2 text-red-500" /> by Pavan Kumar
             <span className="mx-2">•</span>
             © {new Date().getFullYear()} All rights reserved
           </p>
