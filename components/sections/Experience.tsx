@@ -12,43 +12,31 @@ const Experience = () => {
   const experiences = [
     {
       title: 'Full Stack Developer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      period: 'Jan 2023 - Present',
+      company: 'Intelliclick Services pvt ltd',
+      location: 'Remote',
+      period: 'Nov 2024 - Present',
       description: [
         'Developed and maintained 5+ React-based web applications serving 10k+ users',
         'Implemented responsive UI components using React, TypeScript, and Tailwind CSS',
         'Built RESTful APIs with Node.js and Express, improving response times by 40%',
         'Collaborated with cross-functional teams using Agile methodologies',
       ],
-      technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS'],
+      technologies: ['Next.js','React', 'TypeScript','MongoDB', 'Tailwind CSS', 'TypeScript'],
     },
     {
-      title: 'Frontend Developer',
-      company: 'StartupXYZ',
-      location: 'Remote',
-      period: 'Jun 2022 - Dec 2022',
+      title: 'Software Developer',
+      company: 'FlyingFox Labs Pvt Ltd',
+      location: 'Hyderabad, Telangana',
+      period: 'Jul 2023 - Aug 2024',
       description: [
         'Created responsive web interfaces for e-commerce platform',
         'Optimized application performance, reducing load times by 30%',
         'Integrated third-party APIs and payment gateways',
         'Wrote comprehensive unit tests achieving 85% code coverage',
       ],
-      technologies: ['React', 'JavaScript', 'Sass', 'Jest', 'Stripe API'],
+      technologies: ['React', 'JavaScript', 'Tamagui','Next.js', 'Nest.js', 'Keycloak', 'PostgreSQL'],
     },
-    {
-      title: 'Junior Developer',
-      company: 'WebDev Agency',
-      location: 'Austin, TX',
-      period: 'Jan 2022 - May 2022',
-      description: [
-        'Assisted in developing client websites using modern web technologies',
-        'Learned best practices for version control and code review processes',
-        'Participated in daily standups and sprint planning meetings',
-        'Contributed to company coding standards and documentation',
-      ],
-      technologies: ['HTML/CSS', 'JavaScript', 'WordPress', 'Git', 'Figma'],
-    },
+    
   ];
 
   const containerVariants = {

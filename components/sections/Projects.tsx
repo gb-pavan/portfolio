@@ -11,42 +11,35 @@ const Projects = () => {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const projects = [
+  
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard. Built with modern technologies for optimal performance.',
-      image: 'https://images.pexels.com/photos/4968639/pexels-photo-4968639.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Tailwind CSS'],
-      github: '#',
-      live: '#',
+      title: 'AI Knowledge-Base',
+      description: 'An AI-powered knowledge management system with natural language search, instant answers, and smart suggestions to streamline support, learning, and documentation access.',
+      image: 'https://res.cloudinary.com/db9tsiti3/image/upload/v1752590283/ai-knowledge-base_bhsxnz.png',
+      technologies: ['Next.js', 'TypeScript', 'MongoDB', 'Gemini API', 'Tailwind CSS'],
+      github: 'https://github.com/gb-pavan/ai-knowledge-base',
+      live: 'https://ai-knowledge-base-lime.vercel.app/',
       featured: true,
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'TypeScript', 'Socket.io', 'MongoDB'],
-      github: '#',
-      live: '#',
-      featured: true,
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Appointment Booking System',
+      description: 'A responsive scheduling platform with real-time availability, automated reminders, and seamless appointment management for users and providers.',
+      image: 'https://res.cloudinary.com/db9tsiti3/image/upload/v1752590333/Booking-app_ijvttd.png',
       technologies: ['React', 'OpenWeather API', 'Chart.js', 'CSS3'],
-      github: '#',
-      live: '#',
+      github: 'https://github.com/gb-pavan/booking-app',
+      live: 'https://booking-app-ten-topaz.vercel.app/',
       featured: false,
     },
     {
-      title: 'Social Media Dashboard',
-      description: 'A comprehensive social media analytics dashboard with data visualization and performance tracking.',
-      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Vue.js', 'D3.js', 'Firebase', 'Vuetify'],
-      github: '#',
-      live: '#',
-      featured: false,
-    },
+      title: 'Server Less E-Commerce',
+      description: 'A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard. Built with modern technologies for optimal performance.',
+      image: 'https://res.cloudinary.com/db9tsiti3/image/upload/v1752590336/e-commerce_brq77d.png',
+      technologies: ['Next,js', 'TypeScript', 'MongoDB', 'Stripe', 'Tailwind CSS'],
+      github: 'https://github.com/gb-pavan/server-less-architechture',
+      live: 'https://server-less-architechture.vercel.app/',
+      featured: true,
+    }
+
   ];
 
   const containerVariants = {
@@ -101,7 +94,7 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="flex space-x-4">
+                  {/* <div className="flex space-x-4">
                     <Button
                       size="sm"
                       variant="outline"
@@ -118,7 +111,28 @@ const Projects = () => {
                       <Github size={16} className="mr-2" />
                       Code
                     </Button>
+                  </div> */}
+                  <div className="flex space-x-4">
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-3 py-1.5 text-sm rounded-md bg-white/10 backdrop-blur-lg border border-white/20 text-white hover:bg-white hover:text-gray-900"
+                    >
+                      <Eye size={16} className="mr-2" />
+                      Live Demo
+                    </a>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-3 py-1.5 text-sm rounded-md bg-white/10 backdrop-blur-lg border border-white/20 text-white hover:bg-white hover:text-gray-900"
+                    >
+                      <Github size={16} className="mr-2" />
+                      Code
+                    </a>
                   </div>
+
                 </div>
               </div>
 
@@ -141,7 +155,7 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="flex space-x-4">
+                {/* <div className="flex space-x-4">
                   <Button
                     variant="outline"
                     size="sm"
@@ -158,13 +172,34 @@ const Projects = () => {
                     <Github size={16} className="mr-2" />
                     GitHub
                   </Button>
+                </div> */}
+                <div className="flex space-x-4">
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white rounded-md px-3 py-1 text-sm"
+                  >
+                    <ExternalLink size={16} className="mr-2" />
+                    Live Demo
+                  </a>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center border border-gray-300 text-gray-600 hover:bg-gray-600 hover:text-white rounded-md px-3 py-1 text-sm"
+                  >
+                    <Github size={16} className="mr-2" />
+                    GitHub
+                  </a>
                 </div>
+
               </div>
             </motion.div>
           ))}
         </div>
 
-        <motion.div
+        {/* <motion.div
           variants={itemVariants}
           className="text-center mt-12"
         >
@@ -174,7 +209,7 @@ const Projects = () => {
           >
             View All Projects
           </Button>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </section>
   );

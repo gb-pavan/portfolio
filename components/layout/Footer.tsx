@@ -5,9 +5,9 @@ import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: '#', label: 'Email' },
+    { icon: Github, href: 'https://github.com/gb-pavan', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/pavan-kumar-g-8b7b83371/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:developer.pavan201@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -64,6 +64,7 @@ const Footer = () => {
                   <motion.a
                     key={index}
                     href={social.href}
+                    target='_blank'
                     whileHover={{ scale: 1.2, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
                     className="p-3 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 text-gray-300 hover:text-purple-400 transition-colors duration-300"
@@ -75,7 +76,7 @@ const Footer = () => {
               })}
             </div>
             <p className="text-gray-300 text-sm">
-              alex.johnson@email.com
+              developer.pavan201@gmail.com
             </p>
           </motion.div>
         </div>

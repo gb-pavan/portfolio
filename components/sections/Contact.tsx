@@ -47,19 +47,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'alex.johnson@email.com',
-      href: 'mailto:alex.johnson@email.com',
+      value: 'developer.pavan201@gmail.com',
+      href: 'mailto:developer.pavan201@gmail.com',
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+91 8019381902',
+      // href: 'tel:+15551234567',
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Khammam, Telangana, India',
       href: '#',
     },
   ];
