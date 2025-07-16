@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   const containerVariants = {
@@ -48,13 +47,24 @@ const Hero = () => {
           <div className="text-2xl md:text-3xl text-gray-700 mb-8 h-16">
             <TypeAnimation
               sequence={[
-                'Full Stack Developer',
-                2000,
+              
                 'React Specialist',
                 2000,
                 'Problem Solver',
                 2000,
                 'Tech Enthusiast',
+                2000,
+                'AI Enthusiast',
+                2000,
+                'Excellent Communicator',
+                2000,
+                'Problem solver',
+                2000,
+                'Start-to-Finish Ownership',
+                2000,
+                'Growth Mindset',
+                2000,
+                'AI-augmented Full Stack Developer',
                 2000,
               ]}
               wrapper="span"
@@ -77,21 +87,29 @@ const Hero = () => {
           variants={itemVariants}
           className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16"
         >
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+          
+          <a
+            href="mailto:developer.pavan201@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            className="inline-flex items-center bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <Mail className="mr-2" size={20} />
             Get In Touch
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 rounded-full transition-all duration-300"
+          </a>
+          
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            className="inline-flex items-center justify-center border border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 text-sm font-medium rounded-full transition-all duration-300"
           >
-            <Download className="mr-2" size={20} />
+            <Download className="mr-2" size={16} />
             Download Resume
-          </Button>
+          </a>
+
         </motion.div>
 
         <motion.div

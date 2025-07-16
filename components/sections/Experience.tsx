@@ -16,10 +16,10 @@ const Experience = () => {
       location: 'Remote',
       period: 'Nov 2024 - Present',
       description: [
-        'Developed and maintained 5+ React-based web applications serving 10k+ users',
+        'Developed and maintained a CRM dashboard and improved performance using code splitting, and smart caching',
         'Implemented responsive UI components using React, TypeScript, and Tailwind CSS',
-        'Built RESTful APIs with Node.js and Express, improving response times by 40%',
-        'Collaborated with cross-functional teams using Agile methodologies',
+        'Built RESTful APIs, improving response times by 40%',
+        'Implemented secure JWT-based login using HTTP-only cookies instead of localStorage',
       ],
       technologies: ['Next.js','React', 'TypeScript','MongoDB', 'Tailwind CSS', 'TypeScript'],
     },
@@ -29,10 +29,10 @@ const Experience = () => {
       location: 'Hyderabad, Telangana',
       period: 'Jul 2023 - Aug 2024',
       description: [
-        'Created responsive web interfaces for e-commerce platform',
+        'Built a smooth calendar-based appointment system',
         'Optimized application performance, reducing load times by 30%',
-        'Integrated third-party APIs and payment gateways',
-        'Wrote comprehensive unit tests achieving 85% code coverage',
+        'Reduced frontend load time by 45% by minimizing payload size and leveraging lazy loading',
+        'Optimized MongoDB queries with indexing, reducing data retrieval time by 50%'
       ],
       technologies: ['React', 'JavaScript', 'Tamagui','Next.js', 'Nest.js', 'Keycloak', 'PostgreSQL'],
     },
@@ -86,7 +86,8 @@ const Experience = () => {
                 className="relative md:pl-20"
               >
                 {/* Timeline dot */}
-                <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full shadow-lg hidden md:block transform -translate-x-1/2"></div>
+                {/* <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full shadow-lg hidden md:block transform -translate-x-1/2"></div> */}
+                <div className="absolute left-8 w-4 h-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full shadow-lg hidden md:block transform -translate-x-1/2"></div>
 
                 <div className="glass rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
@@ -112,9 +113,13 @@ const Experience = () => {
 
                   <ul className="space-y-2 mb-6">
                     {exp.description.map((item, idx) => (
-                      <li key={idx} className="text-gray-700 flex items-start">
-                        <span className="text-purple-600 mr-2 mt-2">•</span>
-                        {item}
+                      // <li key={idx} className="text-gray-700 flex items-start">
+                      //   <span className="text-purple-600 mr-2 mt-2">•</span>
+                      //   {item}
+                      // </li>
+                      <li key={idx} className="text-gray-700 flex items-start gap-2">
+                        <span className="text-purple-600 pt-0 text-lg leading-none">•</span>
+                        <span>{item}</span>
                       </li>
                     ))}
                   </ul>
