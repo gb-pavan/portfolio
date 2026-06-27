@@ -100,7 +100,7 @@ const Hero = () => {
           </a>
           
           <a
-            href="/resume.pdf"
+            href="/ResumeS.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download
@@ -118,7 +118,7 @@ const Hero = () => {
         >
           {[
             { icon: Github, href: 'https://github.com/gb-pavan', label: 'GitHub' },
-            { icon: Linkedin, href: 'https://www.linkedin.com/in/pavan-kumar-g-8b7b83371/', label: 'LinkedIn' },
+            { icon: Linkedin, href: 'https://www.linkedin.com/in/pavan-kumar-geddam-8b7b83371/', label: 'LinkedIn' },
             { icon: Mail, href: 'mailto:developer.pavan201@gmail.com', label: 'Email' },
           ].map((social, index) => {
             const IconComponent = social.icon;
