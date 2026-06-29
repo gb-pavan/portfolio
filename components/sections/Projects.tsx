@@ -30,15 +30,15 @@ const Projects = () => {
       live: 'https://booking-app-ten-topaz.vercel.app/',
       featured: false,
     },
-    {
-      title: 'Server Less E-Commerce',
-      description: 'A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard. Built with modern technologies for optimal performance.',
-      image: 'https://res.cloudinary.com/db9tsiti3/image/upload/v1752590336/e-commerce_brq77d.png',
-      technologies: ['Next,js', 'TypeScript', 'MongoDB', 'Stripe', 'Tailwind CSS'],
-      github: 'https://github.com/gb-pavan/server-less-architechture',
-      live: 'https://server-less-architechture.vercel.app/',
-      featured: true,
-    }
+    // {
+    //   title: 'Server Less E-Commerce',
+    //   description: 'A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard. Built with modern technologies for optimal performance.',
+    //   image: 'https://res.cloudinary.com/db9tsiti3/image/upload/v1752590336/e-commerce_brq77d.png',
+    //   technologies: ['Next,js', 'TypeScript', 'MongoDB', 'Stripe', 'Tailwind CSS'],
+    //   github: 'https://github.com/gb-pavan/server-less-architechture',
+    //   live: 'https://server-less-architechture.vercel.app/',
+    //   featured: true,
+    // }
 
   ];
 
